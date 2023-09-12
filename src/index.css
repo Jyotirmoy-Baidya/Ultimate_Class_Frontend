@@ -1,0 +1,483 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+  color: #4ccfc9;
+}
+
+.dark {
+  --bg-color: rgb(17 24 39);
+}
+
+.icon-active {
+  @apply bg-blue-600 shadow-lg shadow-blue-500/50 text-white
+}
+
+.all-classes-class {
+  transition: 0.5s;
+  @apply h-32 w-80 p-5
+}
+
+/* Blue Glow Effect  */
+.class-blue {
+  background: #1f9aff;
+  /* color: white; */
+  /* background: #fecc00; */
+  position: relative;
+}
+
+.class-blue:hover {
+  scale: 1.02;
+  color: #1e9bff;
+  /* color: #fecc00; */
+  /* background: #1e9aff7d; */
+  transition: 0.5s;
+  /* box-shadow: 0 0 35px #1e9bff; */
+  /* box-shadow: 0 0 35px #fecc00; */
+}
+
+.class-blue::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: white;
+  /* background: linear-gradient(to left, #022b4d, #000000); */
+  /* background: rgb(45, 45, 45); */
+
+}
+
+.class-blue div {
+  position: relative;
+  z-index: 1;
+}
+
+.class-blue i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.class-blue i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  /* background: rgb(45, 45, 45); */
+  background: white;
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-blue:hover i::before {
+  width: 20px;
+  left: 20%
+}
+
+.class-blue i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  background: white;
+  /* background: rgb(45, 45, 45); */
+  /* background: #022b4d; */
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-blue:hover i::after {
+  width: 20px;
+  left: 80%
+}
+
+.class-blue:hover .no-of-student {
+  background: #1e9bff;
+  /* background: #fecc00; */
+  transition: 0.5s;
+}
+
+.class-blue:hover .enroll-text {
+  color: #1e9bff;
+  /* color: #fecc00; */
+  transition: 0.5s;
+}
+
+.class-blue .class-progress-bar {
+  background: rgb(230, 230, 230);
+}
+
+.class-blue:hover .class-progress-bar {
+  background-color: #1e9aff42;
+  /* background-color: rgb(185, 185, 185); */
+  transition: 0.5s;
+}
+
+.class-blue:hover .class-progress-bar .progress {
+  background-color: #1e9bff;
+  /* background: #fecc00; */
+  transition: 0.5s;
+}
+
+/* Pink Glow Effect  */
+.class-pink {
+  /* background: #1a73e8; */
+  background: #ff00b4;
+  color: white;
+  /* border: 2px solid white; */
+  position: relative;
+}
+
+.class-pink:hover {
+  scale: 1.02;
+  color: #ff00b4;
+  transition: 0.5s;
+  box-shadow: 0 0 35px #ff00b4;
+}
+
+.class-pink::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(45, 45, 45);
+}
+
+.class-pink div {
+  position: relative;
+  z-index: 1;
+}
+
+.class-pink i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.class-pink i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-pink:hover i::before {
+  width: 20px;
+  left: 20%
+}
+
+.class-pink i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-pink:hover i::after {
+  width: 20px;
+  left: 80%
+}
+
+.class-pink:hover .no-of-student {
+  background: #ff00b4;
+  transition: 0.5s;
+}
+
+.class-pink:hover .enroll-text {
+  color: #ff00b4;
+  transition: 0.5s;
+}
+
+.class-pink:hover .class-progress-bar {
+  background-color: #ff00b442;
+  transition: 0.5s;
+}
+
+.class-pink:hover .class-progress-bar .progress {
+  background-color: #ff00b4;
+  transition: 0.5s;
+}
+
+
+/* Yellow Glow Effect  */
+.class-yellow {
+  /* background: #1a73e8; */
+  background: #fecc00;
+  color: white;
+  /* border: 2px solid white; */
+  position: relative;
+}
+
+.class-yellow:hover {
+  scale: 1.02;
+  color: #fecc00;
+  transition: 0.5s;
+  box-shadow: 0 0 35px #fecc00;
+}
+
+.class-yellow::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(45, 45, 45);
+}
+
+.class-yellow div {
+  position: relative;
+  z-index: 1;
+}
+
+.class-yellow i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.class-yellow i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-yellow:hover i::before {
+  width: 20px;
+  left: 20%
+}
+
+.class-yellow i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-yellow:hover i::after {
+  width: 20px;
+  left: 80%
+}
+
+.class-yellow:hover .no-of-student {
+  background: #fecc00;
+  transition: 0.5s;
+}
+
+.class-yellow:hover .enroll-text {
+  color: #fecc00;
+  transition: 0.5s;
+}
+
+.class-yellow:hover .class-progress-bar {
+  background-color: #fecc0042;
+  transition: 0.5s;
+}
+
+.class-yellow:hover .class-progress-bar .progress {
+  background-color: #fecc00;
+  transition: 0.5s;
+}
+
+/* Green Glow Effect  */
+.class-green {
+  /* background: #1a73e8; */
+  background: #00cfac;
+  color: white;
+  /* border: 2px solid white; */
+  position: relative;
+}
+
+.class-green:hover {
+  scale: 1.02;
+  color: #00cfac;
+  transition: 0.5s;
+  box-shadow: 0 0 35px #00cfac;
+}
+
+.class-green::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(45, 45, 45);
+}
+
+.class-green div {
+  position: relative;
+  z-index: 1;
+}
+
+.class-green i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.class-green i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-green:hover i::before {
+  width: 20px;
+  left: 20%
+}
+
+.class-green i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-green:hover i::after {
+  width: 20px;
+  left: 80%
+}
+
+.class-green:hover .no-of-student {
+  background: #00cfac;
+  transition: 0.5s;
+}
+
+.class-green:hover .enroll-text {
+  color: #00cfac;
+  transition: 0.5s;
+}
+
+.class-green:hover .class-progress-bar {
+  background-color: #00cfac42;
+  transition: 0.5s;
+}
+
+.class-green:hover .class-progress-bar .progress {
+  background-color: #00cfac;
+  transition: 0.5s;
+}
+
+/* Purple Glow Effect  */
+.class-purple {
+  /* background: #1a73e8; */
+  background: #ac31e0;
+  color: white;
+  /* border: 2px solid white; */
+  position: relative;
+}
+
+.class-purple:hover {
+  scale: 1.02;
+  color: #ac31e0;
+  transition: 0.5s;
+  box-shadow: 0 0 35px #ac31e0;
+}
+
+.class-purple::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(45, 45, 45);
+}
+
+.class-purple div {
+  position: relative;
+  z-index: 1;
+}
+
+.class-purple i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.class-purple i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-purple:hover i::before {
+  width: 20px;
+  left: 20%
+}
+
+.class-purple i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  background: rgb(45, 45, 45);
+  transform: translateX(-50%) skewX((325deg));
+  transition: 0.5s;
+}
+
+.class-purple:hover i::after {
+  width: 20px;
+  left: 80%
+}
+
+.class-purple:hover .no-of-student {
+  background: #ac31e0;
+  transition: 0.5s;
+}
+
+.class-purple:hover .enroll-text {
+  color: #ac31e0;
+  transition: 0.5s;
+}
+
+.class-purple:hover .class-progress-bar {
+  background-color: #ac31e042;
+  transition: 0.5s;
+}
+
+.class-purple:hover .class-progress-bar .progress {
+  background-color: #ac31e0;
+  transition: 0.5s;
+}
+
+@media (max-width: 980px) {
+  .class-blue .no-of-student {
+    background: #1f9aff;
+  }
+}

@@ -1,0 +1,27 @@
+.type-active .type-label {
+    color: rgb(37 99 235);
+}
+
+.all-classes-list::-webkit-scrollbar {
+    display: none;
+}
+
+.enroll-text {
+    font-size: 0.6rem;
+}
+
+.class-progress-bar {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* background: rgb(230, 230, 230); */
+}
+
+
+
+
+
+/* responsive  */
+@media (max-width:480px) {
+    .class-type {
+        display: none;
+    }
+}

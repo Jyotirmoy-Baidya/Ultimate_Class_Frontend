@@ -1,0 +1,8 @@
+.dark {
+    --bg-color: rgb(17 24 39)
+}
+
+.navbar {
+    height: 10rem;
+    background-color: var(--bg-color);
+}

@@ -1,9 +1,11 @@
-import React from 'react'
+import "../../Style/Basics.css"
 
 function Navs() {
     return (
         <>
-
+            <div className="navbar">
+                heloow
+            </div>
         </>
     )
 }
