@@ -10,14 +10,25 @@
   --bg-color: rgb(17 24 39);
 }
 
+/* Active icon in Left Section  */
 .icon-active {
   @apply bg-blue-600 shadow-lg shadow-blue-500/50 text-white
+}
+
+.type-active .type-label {
+  color: rgb(37 99 235);
+}
+
+.type-option {
+  cursor: pointer;
 }
 
 .all-classes-class {
   transition: 0.5s;
   @apply h-32 w-80 p-5
 }
+
+
 
 /* Blue Glow Effect  */
 .class-blue {

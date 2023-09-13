@@ -1,6 +1,6 @@
 import { FcReading } from "react-icons/fc"
 import { NavLink } from "react-router-dom"
-
+import PropTypes from 'prop-types';
 
 
 function Class({ color }) {
@@ -30,6 +30,8 @@ function Class({ color }) {
         </>
     )
 }
-
+Class.propTypes = {
+    color: PropTypes.any
+}
 
 export default Class

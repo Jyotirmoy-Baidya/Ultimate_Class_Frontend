@@ -1,7 +1,3 @@
-.type-active .type-label {
-    color: rgb(37 99 235);
-}
-
 .all-classes-list::-webkit-scrollbar {
     display: none;
 }

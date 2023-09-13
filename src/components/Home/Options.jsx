@@ -1,19 +1,27 @@
+import { useState } from "react"
 import { MdOutlineGroups } from "react-icons/md"
 import { SiGoogleclassroom } from "react-icons/si"
+import LeftSectionUnits from "../Basics/LeftSectionUnits";
 
 function Options() {
+    const [type, setType] = useState(0);
     return (
         <>
             <div className="h-full grid-span-1 py-28 px-10 bg-white dark:bg-gray-900 class-type">
                 <div className="flex flex-col gap-6 options">
-                    <div className="flex items-center gap-3.5 text-black dark:text-white type-option type-active">
-                        <div className="rounded-xl p-2.5 type-icon icon-active"><MdOutlineGroups /></div>
-                        <div className="text-black dark:text-white type-label">Own</div>
+                    <div onClick={() => setType(0)}>
+                        {
+                            type == 0 ? <LeftSectionUnits icon={<MdOutlineGroups />} data="Own" active="active" onClick={() => setType(0)} /> :
+                                <LeftSectionUnits icon={<MdOutlineGroups />} data="Own" onClick={() => setType(0)} />
+                        }
                     </div>
-                    <div className="flex items-center gap-3 text-black dark:text-white type-option">
-                        <div className="rounded-xl p-2.5 type-icon"><SiGoogleclassroom /></div>
-                        <div className="text-black dark:text-white type-label">Insitutes</div>
+                    <div onClick={() => setType(1)}>
+                        {
+                            type == 1 ? <LeftSectionUnits icon={<SiGoogleclassroom />} data="Institutes" active="active" /> :
+                                <LeftSectionUnits icon={<SiGoogleclassroom />} data="Institutes" />
+                        }
                     </div>
+
                 </div>
             </div>
         </>
